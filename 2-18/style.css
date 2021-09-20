@@ -1,0 +1,14 @@
+body {
+    background-color: gray;
+}
+h1 {
+    text-align: center;
+    color: white;
+    border-bottom: solid 5px white;
+    margin-top: 100px;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}

@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Asia/Tokyo');
 $time = intval(date("H", time()));
 echo "今{$time}時台です<br>";
 

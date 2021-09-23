@@ -18,19 +18,20 @@ $correctanswer3 = ["select"];
 <p>お疲れ様です<?php echo $my_name; ?>さん</p>
 
 <h2>①ネットワークのポート番号は何番?</h2>
-<?php foreach ($question1 as $value1) {
-    echo '<input type="radio" name="answer1" value='.$value1.'>'.$value1;
-} ?>
+
+<?php foreach ($question1 as $value1) : ?>
+    <input type="radio" name="answer1" value="<?php echo $value1 ?>" ><?php echo $value1; ?>
+<?php endforeach; ?>
 
 <h2>②Webページを作成するための言語は?</h2>
-<?php foreach ($question2 as $value2) {
-    echo '<input type="radio" name="answer2" value='.$value2.'>'.$value2;
-} ?>
+<?php foreach ($question2 as $value2) : ?>
+    <input type="radio" name="answer2" value="<?php echo $value2 ?>" ><?php echo $value2; ?>
+<?php endforeach; ?>
 
 <h2>③MySQLで情報を取得するためのコマンドは?</h2>
-<?php foreach ($question3 as $value3) {
-    echo '<input type="radio" name="answer3" value='.$value3.'>'.$value3;
-} ?>
+<?php foreach ($question3 as $value3) : ?>
+    <input type="radio" name="answer3" value="<?php echo $value3 ?>" ><?php echo $value3; ?>
+<?php endforeach; ?>
 
 <br>
 <input type="hidden" name="correctanswer1" value="<?php echo implode($correctanswer1); ?>" />

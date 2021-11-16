@@ -1,11 +1,12 @@
 <?php
 // セッション開始
 session_start();
-// DBサーバのURL
-$db['host'] = "localhost";
+$_SESSION['host'] = "localhost";
 // ユーザー名
-$db['user'] = "root";
-// ユーザー名のパスワード
-$db['pass'] = "";
-// データベース名
-$db['dbname'] = "loginManagement";
+$_SESSION['user'] = "root";
+//　パスワード
+$_SESSION['pass'] = "root";
+// DB名前
+$_SESSION['dbname'] = "YIGroupBlog";
+
+?>

@@ -8,8 +8,6 @@ define('DB_PASSWORD', 'root');
 // DSN
 define('PDO_DSN', 'mysql:host=localhost;charset=utf8;dbname='.DB_DATABASE);
 
-// echo "接続できた？";
-
 /**
  * DBの接続設定をしたPDOインスタンスを返却する
  * @return object

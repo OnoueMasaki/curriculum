@@ -5,16 +5,7 @@ $getData = new getData();
 
 $users = $getData->getUserData();
 
-// echo $users['first_name'];
-// echo '<br>';
-
 $posts = $getData->getPostData();
-// var_dump($posts);
-// echo '<br>';
-
-// foreach($posts as $row){
-    // secho $row['id'];
-// }
 
 ?>
 
@@ -47,33 +38,33 @@ $posts = $getData->getPostData();
                     <th>本文</th>
                     <th>投稿日</th>
                 </tr>
-                <?php
-                    foreach($posts as $row){
-                        echo '<tr class="content">';
-                        echo '<th>';
-                        echo $row['id'];
-                        echo '</th>';
-                        echo '<th>';
-                        echo $row['title'];
-                        echo '</th>';
-                        echo '<th>';
-                        if($row['category_no'] == 1){
-                            echo '食事';
-                        }else if($row['category_no'] == 2){
-                            echo '旅行';
-                        }else {
-                            echo 'その他';
-                        }
-                        echo '</th>';
-                        echo '<th>';
-                        echo $row['comment'];
-                        echo '</th>';
-                        echo '<th>';
-                        echo $row['created'];
-                        echo '</th>';
-                        echo '</tr>';
-                    }
-                ?>
+                <?php foreach($posts as $row) : ?>
+                    <tr class="content">
+                        <th>
+                            <?php echo $row['id']; ?>
+                        </th>
+                        <th>
+                            <?php echo $row['title']; ?>
+                        </th>
+                        <th>
+                            <?php 
+                            if($row['category_no'] == 1){
+                                echo '食事';
+                            }else if($row['category_no'] == 2){
+                                echo '旅行';
+                            }else {
+                                echo 'その他';
+                            }
+                            ?>
+                        </th>
+                        <th>
+                            <?php echo $row['comment']; ?>
+                        </th>
+                        <th>
+                            <?php echo $row['created']; ?>
+                        </th>
+                    </tr>
+                <?php endforeach; ?>
             </table>
         </div>
         <div class="header">Y&I group.inc</div>

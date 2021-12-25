@@ -1,0 +1,20 @@
+#title, #date {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+#stock {
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#post {
+    display: inline-block;
+    color: white;
+    background-color: #1E90FF;
+    padding: 5px 50px 5px 50px
+
+}

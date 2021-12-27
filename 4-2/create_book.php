@@ -64,7 +64,7 @@ if(!empty($_POST)) {
             <input type="text" name="date" id="date" placeholder="発売日">
             <br>
             <p>在庫数</p>
-            <input type="number" name="stock" id="stock" placeholder="選択してください">
+            <input type="number" name="stock" id="stock" min=0 placeholder="選択してください">
             <br>
             <input type="submit" value="登録" id="post" name="post">
         </form>
